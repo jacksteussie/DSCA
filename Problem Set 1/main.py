@@ -3,13 +3,13 @@
 # @email jsteussi@ucsd.edu #
 ############################
 
-###############Libraries and Prerequisites###############
+############### Libraries and Prerequisites ###############
 import requests
 import re
 import string
 import collections
 
-###############Helper Functions###############
+############### Helper Functions ###############
 def dl_book(url, filename):
     ''' Downloads the content of a html page.
         
@@ -73,7 +73,7 @@ def word_check():
     @return: a list of words stating whether user input exists or not 
     '''
 
-###############Main Script###############
+############### Main Script ###############
 dl_book('https://www.gutenberg.org/files/2600/2600-h/2600-h.htm', 'w&p.txt')
 dl_book('https://www.gutenberg.org/files/98/98-h/98-h.htm', 'two_cities.txt')
 dl_book('https://www.gutenberg.org/files/174/174-h/174-h.htm', 'gray.txt')
