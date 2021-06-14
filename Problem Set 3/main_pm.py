@@ -95,7 +95,7 @@ for entry in book_data:
 	word_index = df_fdist['word_index'].values
 	mask = frequency <= cutoff
 	word_index[mask] = 0
-	df_fdist['word_index'] =  word_index
+	df_fdist['word_index'] = word_index
     
     # Convert pandas to dictionary
 	word_dict = df_fdist['word_index'].to_dict()
@@ -128,3 +128,5 @@ cur.executescript('''
 			SELECT * FROM scraped_books ;
 			DROP TABLE IF EXISTS scraped_stuff ; 
 			''')
+conn.commit()
+conn.close()
