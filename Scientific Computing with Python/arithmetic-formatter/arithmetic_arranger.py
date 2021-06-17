@@ -5,7 +5,7 @@
 
 def arithmetic_arranger(input, show_answers=False):
     ''' Receives a list of strings that are arithmetic problems and returns the 
-            problems arranged vertically and side-by-side.
+        problems arranged vertically and side-by-side.
 
     @param input: list of strings that contains arithmetic problems
     @param show_answers: by default is False; True will display answers
