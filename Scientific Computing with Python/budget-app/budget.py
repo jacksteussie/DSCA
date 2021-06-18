@@ -1,4 +1,6 @@
 class Category:
+    ''' Category class that represents a spending category in the budget.''' 
+
     def __init__(self, category):
         ''' Constructor for class Category. Takes a category name (str)
             as an input.
@@ -8,7 +10,7 @@ class Category:
         @return: None
         '''
         self.category = category
-        self.ledger = []
+        self.ledger = list()
     
     def __str__(self):
         ''' Creates string representation of any instance of Category.
