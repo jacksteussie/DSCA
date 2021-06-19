@@ -1,3 +1,8 @@
+############################
+# @author Jack Steussie    #
+# @email jsteussi@ucsd.edu #
+############################
+
 class Category:
     ''' Category class that represents a spending category in the budget.''' 
 

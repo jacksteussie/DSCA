@@ -1,3 +1,8 @@
+############################
+# @author Jack Steussie    #
+# @email jsteussi@ucsd.edu #
+############################
+
 class Rectangle:
     '''Rectangle class that represents a rectangle with width and height'''
 
