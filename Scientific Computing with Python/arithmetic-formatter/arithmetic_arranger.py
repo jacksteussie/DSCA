@@ -15,9 +15,9 @@ def arithmetic_arranger(input, show_answers=False):
         return 'Error: Too many problems.'
     
     output: str
-    first_nums = list()
-    second_nums = list()
-    operators = list()
+    first_nums = []
+    second_nums = []
+    operators = []
     cur_index = 0
 
     # First row loop
