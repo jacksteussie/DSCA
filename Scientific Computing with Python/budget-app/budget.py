@@ -110,7 +110,7 @@ def create_spend_chart(categories):
     @param categories: a list of categories
     @return: the spending chart as a string
     '''
-    spend_chart = list()
+    spend_chart = []
     for category in categories:
         temp = 0
 
