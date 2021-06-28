@@ -15,7 +15,7 @@ class Category:
         @return: None
         '''
         self.category = category
-        self.ledger = list()
+        self.ledger = []
     
     def __str__(self):
         ''' Creates string representation of any instance of Category.
@@ -135,7 +135,7 @@ def create_spend_chart(categories):
         s += ' '
     s += '\n    ----------'
 
-    cat_len = list()
+    cat_len = []
     for category in categories:
         cat_len.append(len(category.category))
     max_len = max(cat_len)
