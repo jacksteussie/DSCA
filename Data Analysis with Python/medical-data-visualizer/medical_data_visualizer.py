@@ -2,6 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import stats
 
 # Import data
 df = pd.read_csv('medical_examination.csv')
@@ -40,9 +41,11 @@ def draw_heat_map():
         (df['height'] <= df['height'].quantile(0.975)) &
         (df['weight'] >= df['weight'].quantile(0.025)) & 
         (df['weight'] <= df['weight'].quantile(0.975))]
+    
+    print(stats.normaltest(df_heat))
 
     # Calculate the correlation matrix
-    corr = df_heat.corr()
+    corr = df_heat.corr('pearson')
 
     # Generate a mask for the upper triangle
     mask = np.zeros_like(corr, dtype=np.bool)
