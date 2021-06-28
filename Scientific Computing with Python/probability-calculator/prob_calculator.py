@@ -33,7 +33,7 @@ class Hat:
         if number > len(self.contents):
             return self.contents
         
-        balls = list()
+        balls = []
         for _ in range(number):
             choice = random.randrange(len(self.contents))
             balls.append(self.contents.pop(choice))
@@ -52,7 +52,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     @param num_experiments: the number of experiments to perform
     @return: the probability of drawing the input list of expected_balls
     '''
-    expected_balls_num = list()
+    expected_balls_num = []
     for key in expected_balls:
         expected_balls_num.append(expected_balls[key])
 
@@ -62,7 +62,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
         new_hat = copy.deepcopy(hat)
         balls = new_hat.draw(num_balls_drawn)
 
-        num_balls = list()
+        num_balls = []
         for key in expected_balls:
             num_balls.append(balls.count(key))
         
