@@ -81,7 +81,7 @@ class Rectangle:
         if self.width > 50 or self.height > 50:
             return 'Too big for picture.'
         
-        output = str()
+        output: str
         for i in range(0, self.height):
             for j in range(0, self.width):
                 output += '*'
