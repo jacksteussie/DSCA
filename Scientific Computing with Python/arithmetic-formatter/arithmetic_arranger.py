@@ -14,7 +14,7 @@ def arithmetic_arranger(input, show_answers=False):
     if len(input) > 5:
         return 'Error: Too many problems.'
     
-    output: str
+    output = ''
     first_nums = []
     second_nums = []
     operators = []
