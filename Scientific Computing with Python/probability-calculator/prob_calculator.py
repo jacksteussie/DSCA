@@ -15,7 +15,7 @@ class Hat:
         @param **kwargs: dictionary of non-keyword arguments (colors)
         @return: None
         '''
-        self.contents = list()
+        self.contents = []
         for key, val in kwargs.items():
             for _ in range(val):
                 self.contents.append(key)
